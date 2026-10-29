@@ -1,123 +1,131 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Your Name | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Northfield College</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <a class="logo" href="#home">YN<span>.</span></a>
-    <button class="menu" id="menu" aria-label="Toggle navigation">☰</button>
-    <nav id="nav">
+
+  <header class="navbar">
+    <a class="brand" href="#home">Northfield <span>College</span></a>
+
+    <nav>
       <a href="#about">About</a>
-      <a href="#education">Education</a>
-      <a href="#skills">Skills</a>
-      <a href="#hobbies">Hobbies</a>
-      <a href="#projects">Projects</a>
-      <a href="#achievements">Achievements</a>
-      <a href="#resume">Resume</a>
+      <a href="#departments">Departments</a>
+      <a href="#admissions">Admissions</a>
+      <a href="#campus">Campus</a>
       <a href="#contact">Contact</a>
     </nav>
+
+    <a class="apply-button" href="#admissions">Apply now ↗</a>
   </header>
 
   <main>
     <section class="hero" id="home">
-      <p class="eyebrow">HELLO, I'M</p>
-      <h1>Your Name</h1>
-      <h2>Student &amp; Aspiring Developer</h2>
-      <p>I enjoy building useful websites and learning new technologies.</p>
-      <a class="button" href="#projects">Explore my projects ↓</a>
-    </section>
-
-    <section id="about">
-      <p class="eyebrow">01 / PROFILE</p>
-      <h2>About me</h2>
-      <p>I’m a curious learner who enjoys solving problems with technology and creating thoughtful digital experiences.</p>
-    </section>
-
-    <section id="education">
-      <p class="eyebrow">02 / QUALIFICATIONS</p>
-      <h2>Education</h2>
-      <article class="card">
-        <h3>Bachelor’s Degree in Your Field</h3>
-        <p>Your University · 2022–2026</p>
-        <p>Relevant coursework: Computer Science, Design, and Data Structures.</p>
-      </article>
-    </section>
-
-    <section id="skills">
-      <p class="eyebrow">03 / TOOLKIT</p>
-      <h2>Technical skills</h2>
-      <div class="chips">
-        <span>HTML</span><span>CSS</span><span>JavaScript</span>
-        <span>Python</span><span>Git</span><span>Figma</span>
+      <div class="hero-content">
+        <p class="eyebrow">A place to become more</p>
+        <h1>Find your way<br>forward.</h1>
+        <p>Discover your interests, meet inspiring mentors, and build a future that feels like yours.</p>
+        <a class="button" href="#departments">Explore programs ↗</a>
       </div>
     </section>
 
-    <section id="hobbies">
-      <p class="eyebrow">04 / OUTSIDE THE SCREEN</p>
-      <h2>Hobbies</h2>
-      <p>Reading · Photography · Music · Exploring new places</p>
+    <section class="stats">
+      <div><strong>12:1</strong><span>Student–faculty ratio</span></div>
+      <div><strong>38</strong><span>Fields of study</span></div>
+      <div><strong>80+</strong><span>Student clubs</span></div>
+      <div><strong>1892</strong><span>Founded</span></div>
     </section>
 
-    <section id="projects">
-      <p class="eyebrow">05 / SELECTED WORK</p>
-      <h2>Projects</h2>
-      <div class="grid">
+    <section class="section about" id="about">
+      <div>
+        <p class="eyebrow">Welcome to Northfield</p>
+        <h2>Learn deeply.<br>Live fully.</h2>
+      </div>
+      <p>Northfield College is a welcoming community where students learn by asking questions, working together, and putting ideas into practice. Small classes and supportive faculty help every student find their path.</p>
+    </section>
+
+    <section class="section programs" id="departments">
+      <p class="eyebrow">Explore your interests</p>
+      <h2>Departments & courses</h2>
+      <div class="cards">
         <article class="card">
-          <h3>Daylight Planner</h3>
-          <p>A simple daily planner built with HTML, CSS, and JavaScript.</p>
+          <div class="icon">✳</div>
+          <h3>Arts & Humanities</h3>
+          <p>Literature, history, languages, music, and visual arts.</p>
+          <a href="#contact">View courses ↗</a>
         </article>
         <article class="card">
-          <h3>Personal Portfolio</h3>
-          <p>A responsive website to showcase my work and experience.</p>
+          <div class="icon">⌬</div>
+          <h3>Science & Technology</h3>
+          <p>Biology, environmental science, data science, and physics.</p>
+          <a href="#contact">View courses ↗</a>
         </article>
         <article class="card">
-          <h3>Neighbourhood Notes</h3>
-          <p>A concept site for discovering local places and sharing recommendations.</p>
+          <div class="icon">◈</div>
+          <h3>Business & Economics</h3>
+          <p>Economics, accounting, entrepreneurship, and management.</p>
+          <a href="#contact">View courses ↗</a>
         </article>
       </div>
     </section>
 
-    <section id="achievements">
-      <p class="eyebrow">06 / MILESTONES</p>
-      <h2>Achievements</h2>
-      <ul>
-        <li>Hackathon finalist — 2025</li>
-        <li>Community volunteer — 2024</li>
-        <li>Completed a web development course — 2025</li>
-      </ul>
+    <section class="section admissions" id="admissions">
+      <div>
+        <p class="eyebrow">Your next chapter starts here</p>
+        <h2>Admissions at Northfield</h2>
+        <p>Choose a program, complete the online application, send your school records, and meet with our admissions team. Financial aid is available for eligible students.</p>
+        <a class="button" href="mailto:admissions@northfield.edu">Ask about applying ↗</a>
+      </div>
     </section>
 
-    <section id="resume">
-      <p class="eyebrow">07 / RESUME</p>
-      <h2>Want the details?</h2>
-      <p>Use the button to print this page or save it as a PDF.</p>
-      <button class="button" onclick="window.print()">Print / Save as PDF</button>
+    <section class="section" id="campus">
+      <p class="eyebrow">Life at Northfield</p>
+      <h2>Room to do your thing.</h2>
+      <div class="cards">
+        <article class="card">
+          <div class="icon">⌂</div>
+          <h3>Campus facilities</h3>
+          <p>Library, science labs, residence halls, dining, and fitness center.</p>
+        </article>
+        <article class="card">
+          <div class="icon">◎</div>
+          <h3>Faculty mentors</h3>
+          <p>Learn from dedicated faculty who support your goals.</p>
+        </article>
+        <article class="card">
+          <div class="icon">♧</div>
+          <h3>Events & community</h3>
+          <p>Join student clubs, guest talks, performances, and campus festivals.</p>
+        </article>
+      </div>
     </section>
 
-    <section id="contact">
-      <p class="eyebrow">08 / GET IN TOUCH</p>
-      <h2>Let’s connect</h2>
-      <p>Email: <a href="mailto:hello@example.com">hello@example.com</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/">Your LinkedIn profile</a></p>
-      <p>GitHub: <a href="https://github.com/">Your GitHub profile</a></p>
+    <section class="section events">
+      <p class="eyebrow">Mark your calendar</p>
+      <h2>Upcoming events</h2>
+      <div class="event"><strong>08 NOV</strong><span>Open House <small>Meet faculty and tour the campus</small></span></div>
+      <div class="event"><strong>14 NOV</strong><span>Student Research Night <small>Discover student projects and ideas</small></span></div>
+      <div class="event"><strong>21 NOV</strong><span>College Music Evening <small>Enjoy a live student performance</small></span></div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div>
+        <p class="eyebrow">Get in touch</p>
+        <h2>Your questions belong here.</h2>
+        <p>18 College Green, Northfield, VT 05663</p>
+        <p>Phone: (802) 555-0192 · admissions@northfield.edu</p>
+      </div>
+      <a class="button" href="mailto:admissions@northfield.edu">Contact admissions ↗</a>
     </section>
   </main>
 
-  <footer>© <span id="year"></span> Your Name</footer>
+  <footer>
+    <a class="brand" href="#home">Northfield <span>College</span></a>
+    <p>© 2025 Northfield College. All rights reserved.</p>
+  </footer>
 
-  <script>
-    const menu = document.querySelector("#menu");
-    const nav = document.querySelector("#nav");
-
-    menu.addEventListener("click", () => nav.classList.toggle("open"));
-    nav.querySelectorAll("a").forEach(link => {
-      link.addEventListener("click", () => nav.classList.remove("open"));
-    });
-    document.querySelector("#year").textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
