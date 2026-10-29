@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Name | Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <a class="logo" href="#home">YN<span>.</span></a>
+    <button class="menu" id="menu" aria-label="Toggle navigation">☰</button>
+    <nav id="nav">
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#hobbies">Hobbies</a>
+      <a href="#projects">Projects</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <p class="eyebrow">HELLO, I'M</p>
+      <h1>Your Name</h1>
+      <h2>Student &amp; Aspiring Developer</h2>
+      <p>I enjoy building useful websites and learning new technologies.</p>
+      <a class="button" href="#projects">Explore my projects ↓</a>
+    </section>
+
+    <section id="about">
+      <p class="eyebrow">01 / PROFILE</p>
+      <h2>About me</h2>
+      <p>I’m a curious learner who enjoys solving problems with technology and creating thoughtful digital experiences.</p>
+    </section>
+
+    <section id="education">
+      <p class="eyebrow">02 / QUALIFICATIONS</p>
+      <h2>Education</h2>
+      <article class="card">
+        <h3>Bachelor’s Degree in Your Field</h3>
+        <p>Your University · 2022–2026</p>
+        <p>Relevant coursework: Computer Science, Design, and Data Structures.</p>
+      </article>
+    </section>
+
+    <section id="skills">
+      <p class="eyebrow">03 / TOOLKIT</p>
+      <h2>Technical skills</h2>
+      <div class="chips">
+        <span>HTML</span><span>CSS</span><span>JavaScript</span>
+        <span>Python</span><span>Git</span><span>Figma</span>
+      </div>
+    </section>
+
+    <section id="hobbies">
+      <p class="eyebrow">04 / OUTSIDE THE SCREEN</p>
+      <h2>Hobbies</h2>
+      <p>Reading · Photography · Music · Exploring new places</p>
+    </section>
+
+    <section id="projects">
+      <p class="eyebrow">05 / SELECTED WORK</p>
+      <h2>Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Daylight Planner</h3>
+          <p>A simple daily planner built with HTML, CSS, and JavaScript.</p>
+        </article>
+        <article class="card">
+          <h3>Personal Portfolio</h3>
+          <p>A responsive website to showcase my work and experience.</p>
+        </article>
+        <article class="card">
+          <h3>Neighbourhood Notes</h3>
+          <p>A concept site for discovering local places and sharing recommendations.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="achievements">
+      <p class="eyebrow">06 / MILESTONES</p>
+      <h2>Achievements</h2>
+      <ul>
+        <li>Hackathon finalist — 2025</li>
+        <li>Community volunteer — 2024</li>
+        <li>Completed a web development course — 2025</li>
+      </ul>
+    </section>
+
+    <section id="resume">
+      <p class="eyebrow">07 / RESUME</p>
+      <h2>Want the details?</h2>
+      <p>Use the button to print this page or save it as a PDF.</p>
+      <button class="button" onclick="window.print()">Print / Save as PDF</button>
+    </section>
+
+    <section id="contact">
+      <p class="eyebrow">08 / GET IN TOUCH</p>
+      <h2>Let’s connect</h2>
+      <p>Email: <a href="mailto:hello@example.com">hello@example.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/">Your LinkedIn profile</a></p>
+      <p>GitHub: <a href="https://github.com/">Your GitHub profile</a></p>
+    </section>
+  </main>
+
+  <footer>© <span id="year"></span> Your Name</footer>
+
+  <script>
+    const menu = document.querySelector("#menu");
+    const nav = document.querySelector("#nav");
+
+    menu.addEventListener("click", () => nav.classList.toggle("open"));
+    nav.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => nav.classList.remove("open"));
+    });
+    document.querySelector("#year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
