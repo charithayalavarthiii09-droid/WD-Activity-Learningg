@@ -1,130 +1,157 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Northfield College</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Learnly — Online Courses</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <header class="navbar">
-    <a class="brand" href="#home">Northfield <span>College</span></a>
+    <a class="logo" href="#">learnly<span>.</span></a>
 
     <nav>
-      <a href="#about">About</a>
-      <a href="#departments">Departments</a>
-      <a href="#admissions">Admissions</a>
-      <a href="#campus">Campus</a>
-      <a href="#contact">Contact</a>
+      <a href="#courses">Courses</a>
+      <a href="#instructors">Instructors</a>
+      <a href="#my-learning">My learning</a>
     </nav>
 
-    <a class="apply-button" href="#admissions">Apply now ↗</a>
+    <a class="profile" href="#my-learning">👤 Alex Morgan</a>
   </header>
 
   <main>
-    <section class="hero" id="home">
+    <section class="hero">
       <div class="hero-content">
-        <p class="eyebrow">A place to become more</p>
-        <h1>Find your way<br>forward.</h1>
-        <p>Discover your interests, meet inspiring mentors, and build a future that feels like yours.</p>
-        <a class="button" href="#departments">Explore programs ↗</a>
+        <p class="eyebrow">Learn something new today</p>
+        <h1>Small steps.<br><span>Big possibilities.</span></h1>
+        <p>Build practical skills with expert-led courses designed to help you reach your goals.</p>
+        <a class="button" href="#courses">Explore courses →</a>
+      </div>
+      <div class="hero-art" aria-hidden="true">✦</div>
+    </section>
+
+    <section class="section" id="courses">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Find your next skill</p>
+          <h2>Browse categories</h2>
+        </div>
+        <a href="#all-courses" class="text-link">All courses →</a>
+      </div>
+
+      <div class="category-list">
+        <a class="category active" href="#all-courses">✦ All courses</a>
+        <a class="category" href="#all-courses">⌘ Design</a>
+        <a class="category" href="#all-courses">⌁ Development</a>
+        <a class="category" href="#all-courses">◈ Business</a>
+        <a class="category" href="#all-courses">◎ Marketing</a>
+      </div>
+
+      <div class="section-heading course-heading" id="all-courses">
+        <div>
+          <p class="eyebrow">Picked for you</p>
+          <h2>Popular courses</h2>
+        </div>
+        <span class="muted">Showing 3 courses</span>
+      </div>
+
+      <div class="course-grid">
+        <article class="course-card">
+          <a class="thumbnail thumb-design" href="#course-design" aria-label="Open UI design course">
+            <span class="play">▶</span>
+            <span class="duration">12h 40m</span>
+            <span class="thumb-label">DESIGN<br>THINKING</span>
+          </a>
+          <div class="course-info">
+            <span class="tag">Design</span>
+            <h3 id="course-design">UI Design Essentials: From Idea to Interface</h3>
+            <p class="description">Learn layout, color, and prototyping as you design your first polished app screen.</p>
+            <div class="instructor">
+              <div class="avatar avatar-one">SC</div>
+              <span>Sarah Chen<small>Product designer</small></span>
+              <span class="rating">★ 4.9</span>
+            </div>
+            <div class="course-meta"><span>18 lessons</span><span>Beginner</span></div>
+            <div class="progress-label"><span>Your progress</span><strong>65%</strong></div>
+            <div class="progress"><span style="width:65%"></span></div>
+            <a class="enroll" href="#my-learning">Continue learning →</a>
+          </div>
+        </article>
+
+        <article class="course-card">
+          <a class="thumbnail thumb-code" href="#course-code" aria-label="Open web development course">
+            <span class="play">▶</span>
+            <span class="duration">9h 15m</span>
+            <span class="thumb-label code-label">&lt;build<br>something/&gt;</span>
+          </a>
+          <div class="course-info">
+            <span class="tag tag-blue">Development</span>
+            <h3 id="course-code">Modern Web Development with HTML & CSS</h3>
+            <p class="description">Create responsive web pages and bring your ideas to life with clean code.</p>
+            <div class="instructor">
+              <div class="avatar avatar-two">JM</div>
+              <span>Jordan Miller<small>Web developer</small></span>
+              <span class="rating">★ 4.8</span>
+            </div>
+            <div class="course-meta"><span>24 lessons</span><span>Beginner</span></div>
+            <div class="progress-label"><span>Your progress</span><strong>30%</strong></div>
+            <div class="progress"><span style="width:30%"></span></div>
+            <a class="enroll" href="#my-learning">Continue learning →</a>
+          </div>
+        </article>
+
+        <article class="course-card">
+          <a class="thumbnail thumb-business" href="#course-business" aria-label="Open business course">
+            <span class="play">▶</span>
+            <span class="duration">7h 50m</span>
+            <span class="thumb-label business-label">MAKE<br>IT HAPPEN</span>
+          </a>
+          <div class="course-info">
+            <span class="tag tag-orange">Business</span>
+            <h3 id="course-business">The Creative Entrepreneur’s Playbook</h3>
+            <p class="description">Turn a promising idea into a focused plan and grow your small business.</p>
+            <div class="instructor">
+              <div class="avatar avatar-three">AP</div>
+              <span>Amara Patel<small>Startup mentor</small></span>
+              <span class="rating">★ 5.0</span>
+            </div>
+            <div class="course-meta"><span>16 lessons</span><span>Intermediate</span></div>
+            <div class="progress-label"><span>Your progress</span><strong>0%</strong></div>
+            <div class="progress"><span style="width:0%"></span></div>
+            <a class="enroll" href="#my-learning">Enroll in course →</a>
+          </div>
+        </article>
       </div>
     </section>
 
-    <section class="stats">
-      <div><strong>12:1</strong><span>Student–faculty ratio</span></div>
-      <div><strong>38</strong><span>Fields of study</span></div>
-      <div><strong>80+</strong><span>Student clubs</span></div>
-      <div><strong>1892</strong><span>Founded</span></div>
-    </section>
-
-    <section class="section about" id="about">
+    <section class="learning-section" id="my-learning">
       <div>
-        <p class="eyebrow">Welcome to Northfield</p>
-        <h2>Learn deeply.<br>Live fully.</h2>
+        <p class="eyebrow">Keep your momentum</p>
+        <h2>Your learning journey is in progress.</h2>
+        <p>You’ve completed 8 lessons this week. Keep going—you’re building great habits.</p>
       </div>
-      <p>Northfield College is a welcoming community where students learn by asking questions, working together, and putting ideas into practice. Small classes and supportive faculty help every student find their path.</p>
+      <a class="button button-light" href="#courses">Go to my learning →</a>
     </section>
 
-    <section class="section programs" id="departments">
-      <p class="eyebrow">Explore your interests</p>
-      <h2>Departments & courses</h2>
-      <div class="cards">
-        <article class="card">
-          <div class="icon">✳</div>
-          <h3>Arts & Humanities</h3>
-          <p>Literature, history, languages, music, and visual arts.</p>
-          <a href="#contact">View courses ↗</a>
-        </article>
-        <article class="card">
-          <div class="icon">⌬</div>
-          <h3>Science & Technology</h3>
-          <p>Biology, environmental science, data science, and physics.</p>
-          <a href="#contact">View courses ↗</a>
-        </article>
-        <article class="card">
-          <div class="icon">◈</div>
-          <h3>Business & Economics</h3>
-          <p>Economics, accounting, entrepreneurship, and management.</p>
-          <a href="#contact">View courses ↗</a>
-        </article>
+    <section class="section instructors" id="instructors">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Learn from the best</p>
+          <h2>Meet your instructors</h2>
+        </div>
       </div>
-    </section>
-
-    <section class="section admissions" id="admissions">
-      <div>
-        <p class="eyebrow">Your next chapter starts here</p>
-        <h2>Admissions at Northfield</h2>
-        <p>Choose a program, complete the online application, send your school records, and meet with our admissions team. Financial aid is available for eligible students.</p>
-        <a class="button" href="mailto:admissions@northfield.edu">Ask about applying ↗</a>
+      <div class="instructor-row">
+        <div class="instructor-profile"><div class="avatar avatar-one">SC</div><div><strong>Sarah Chen</strong><span>Product designer · 12 courses</span></div></div>
+        <div class="instructor-profile"><div class="avatar avatar-two">JM</div><div><strong>Jordan Miller</strong><span>Web developer · 8 courses</span></div></div>
+        <div class="instructor-profile"><div class="avatar avatar-three">AP</div><div><strong>Amara Patel</strong><span>Startup mentor · 6 courses</span></div></div>
       </div>
-    </section>
-
-    <section class="section" id="campus">
-      <p class="eyebrow">Life at Northfield</p>
-      <h2>Room to do your thing.</h2>
-      <div class="cards">
-        <article class="card">
-          <div class="icon">⌂</div>
-          <h3>Campus facilities</h3>
-          <p>Library, science labs, residence halls, dining, and fitness center.</p>
-        </article>
-        <article class="card">
-          <div class="icon">◎</div>
-          <h3>Faculty mentors</h3>
-          <p>Learn from dedicated faculty who support your goals.</p>
-        </article>
-        <article class="card">
-          <div class="icon">♧</div>
-          <h3>Events & community</h3>
-          <p>Join student clubs, guest talks, performances, and campus festivals.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section events">
-      <p class="eyebrow">Mark your calendar</p>
-      <h2>Upcoming events</h2>
-      <div class="event"><strong>08 NOV</strong><span>Open House <small>Meet faculty and tour the campus</small></span></div>
-      <div class="event"><strong>14 NOV</strong><span>Student Research Night <small>Discover student projects and ideas</small></span></div>
-      <div class="event"><strong>21 NOV</strong><span>College Music Evening <small>Enjoy a live student performance</small></span></div>
-    </section>
-
-    <section class="contact" id="contact">
-      <div>
-        <p class="eyebrow">Get in touch</p>
-        <h2>Your questions belong here.</h2>
-        <p>18 College Green, Northfield, VT 05663</p>
-        <p>Phone: (802) 555-0192 · admissions@northfield.edu</p>
-      </div>
-      <a class="button" href="mailto:admissions@northfield.edu">Contact admissions ↗</a>
     </section>
   </main>
 
   <footer>
-    <a class="brand" href="#home">Northfield <span>College</span></a>
-    <p>© 2025 Northfield College. All rights reserved.</p>
+    <a class="logo" href="#">learnly<span>.</span></a>
+    <p>Learn at your own pace. Keep growing.</p>
   </footer>
 
 </body>
